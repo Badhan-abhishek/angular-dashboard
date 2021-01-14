@@ -156,5 +156,10 @@ mat-card {
     gap: 30px;
     mat-card {
         height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(36, 36, 250, 0.664);
     }
 }
