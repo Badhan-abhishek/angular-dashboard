@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="heading">
+    <span class="heading-main">Top matters</span>
+    <div class="right">
+      <span class="status"> Reporting </span>
+      <button mat-icon-button aria-label="More">
+        <mat-icon>more_horiz</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="card-container">
+    <mat-card
+      *ngFor="let data of datas"
+      mat-ripple
+      elevation="true"
+      class="card"
+    >
+      <div class="card-content">
+        <div class="top">
+          <img class="content-logo" src="{{ data.picture }}" />
+          <span class="name">{{ data.name }}</span>
+          <span class="subheading">{{ data.registered }}</span>
+        </div>
+        <div class="bottom">
+          <mat-icon>location_on</mat-icon>{{ data.location }}
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <div class="bottom-container">
+    <div class="emp-bar">
+      <mat-card *ngFor="let user of users" mat-ripple>
+        <div class="user-container">
+          <img class="avatar" src="{{ user.picture }}" />
+          <div class="detail">
+            <span class="name"> {{ user.name }} </span>
+            <span class="subheading"> {{ user.address }} </span>
+          </div>
+        </div>
+        <div class="salary">{{ user.salary }}</div>
+      </mat-card>
+    </div>
+    <div class="graph-container">
+      <!-- <canvas id="chart"></canvas> -->
+      <img src="../../assets/chart.PNG" />
+      <div class="fav">
+        <mat-card>simple</mat-card>
+        <mat-card>simple</mat-card>
+        <mat-card>simple</mat-card>
+        <mat-card>simple</mat-card>
+        <mat-card>simple</mat-card>
+        <mat-card>simple</mat-card>
+        <mat-card>simple</mat-card>
+        <mat-card>simple</mat-card>
+        <mat-card>simple</mat-card>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+$bg-color: rgb(245, 246, 250);
+
+
+.nav-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.logo-container {
+    height: 50px;
+    width: 50px;
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.panel {
+    svg {
+        margin-right: 20px;
+        &:hover {
+            fill: black;
+            cursor: pointer;
+        }
+    }
+}
+
+.navigator {
+    position: absolute;
+    height: 90%;
+    width: 50px;
+    svg {
+       fill: gray;
+       margin-bottom: 20px;
+       &:hover {
+           fill: black;
+           cursor: pointer;
+       }
+    }
+}
+
+.nav-panel {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.route-container {
+    margin-left: 50px;
+}
