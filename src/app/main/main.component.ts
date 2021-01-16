@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Chart } from "chart.js";
 
 @Component({
   selector: 'app-main',
@@ -12,7 +11,7 @@ export class MainComponent implements OnInit {
     
     {
       "_id": "5fffef6d033ed3e7fd0ad079",
-      "picture": "../../assets/company_logos/logo1.svg",
+      "picture": "assets/company_logos/logo1.svg",
       "name": "Cheri Roth",
       "company": "MELBACOR",
       "registered": "2018-08-17",
@@ -20,7 +19,7 @@ export class MainComponent implements OnInit {
     },
     {
       "_id": "5fffef6d5cf13e10cf9030b8",
-      "picture": "../../assets/company_logos/logo2.svg",
+      "picture": "assets/company_logos/logo2.svg",
       "name": "Graciela Kirk",
       "company": "UNEEQ",
       "registered": "2017-10-06",
@@ -28,7 +27,7 @@ export class MainComponent implements OnInit {
     },
     {
       "_id": "5fffef6d3e88d7222640a833",
-      "picture": "../../assets/company_logos/logo3.svg",
+      "picture": "assets/company_logos/logo3.svg",
       "name": "Baird Roach",
       "company": "STROZEN",
       "registered": "2016-04-26",
@@ -36,7 +35,7 @@ export class MainComponent implements OnInit {
     },
     {
       "_id": "5fffef6d94027a908e451891",
-      "picture": "../../assets/company_logos/logo4.svg",
+      "picture": "assets/company_logos/logo4.svg",
       "name": "Willie Obrien",
       "company": "BITREX",
       "registered": "2019-11-03",
@@ -44,7 +43,7 @@ export class MainComponent implements OnInit {
     },
     {
       "_id": "5fffef6d2989889e8fa3e6a3",
-      "picture": "../../assets/company_logos/logo1.svg",
+      "picture": "assets/company_logos/logo1.svg",
       "name": "Buckner Strickland",
       "company": "ZILLAN",
       "registered": "2019-03-17",
@@ -52,7 +51,7 @@ export class MainComponent implements OnInit {
     },
     {
       "_id": "5fffef6d9c5b9d7d7f7b9518",
-      "picture": "../../assets/company_logos/logo2.svg",
+      "picture": "assets/company_logos/logo2.svg",
       "name": "Hanson Holloway",
       "company": "RONBERT",
       "registered": "2014-05-05",
@@ -60,7 +59,7 @@ export class MainComponent implements OnInit {
     },
     {
       "_id": "5fffef6d23b6e4a08652ce17",
-      "picture": "../../assets/company_logos/logo3.svg",
+      "picture": "assets/company_logos/logo3.svg",
       "name": "Letha Frye",
       "company": "ENTHAZE",
       "registered": "2015-06-27",
@@ -119,64 +118,6 @@ export class MainComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    var myChart = new Chart("chart", {
-			type: 'line',
-			data: {
-				labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-				datasets: [ {
-					label: 'My Second dataset',
-					fill: false,
-          backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
-        ],
-        borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)'
-        ],
-        data: [12, 7, 3, 5, 3, 3, 5, 6, 3, 5, 2, 3],
-				}]
-			},
-			options: {
-				responsive: true,
-				// title: {
-				// 	display: true,
-				// 	text: 'Chart.js Line Chart'
-				// },
-				tooltips: {
-					mode: 'index',
-					intersect: false,
-				},
-				hover: {
-					mode: 'nearest',
-					intersect: true
-				},
-				scales: {
-					xAxes: [{
-						display: true,
-						scaleLabel: {
-							display: true,
-							labelString: 'Month'
-						}
-					}],
-					yAxes: [{
-						display: true,
-						scaleLabel: {
-							display: true,
-							labelString: 'Value'
-						}
-					}]
-				}
-			}
-		})
+   
   }
 }

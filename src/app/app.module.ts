@@ -9,7 +9,6 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatCardModule } from "@angular/material/card";
 import { MatRippleModule } from "@angular/material/core";
-import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -25,7 +24,6 @@ import { ChartsModule } from 'ng2-charts';
     MatIconModule,
     MatCardModule,
     MatRippleModule,
-    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
