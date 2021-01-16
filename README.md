@@ -1,3 +1,5 @@
+<span style="color:red">Currently facing error on build, while "ng serve" is working fine.</span>
+
 # Dashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
